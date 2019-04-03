@@ -1,0 +1,9 @@
+---
+applications:
+- name: yafeya-foo
+  buildpacks:
+   - dotnet_core_buildpack
+  env:
+    ASPNETCORE_ENVIRONMENT: development
+  services:
+   - myConfigServer
